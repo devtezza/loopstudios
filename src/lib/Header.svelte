@@ -1,15 +1,26 @@
 <script>
     import Logo from "./Logo.svelte";
+    import MenuBtn from "./MenuBtn.svelte";
     import Navbar from "./Navbar.svelte";
+
+    $: isOpen = false;
+
+    const toggleMenu = () => {
+        console.log('toggled');
+        isOpen = !isOpen;
+    }
 </script>
 <header class="header">
     <Logo />
-    <Navbar />
+    <Navbar {isOpen}/>
+    <MenuBtn on:menu={toggleMenu} />
 </header>
 <style>
-    .header {
+    .header {              
+        /* border: 1px solid blue; */
+        margin-top: 0.5rem;
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        align-items: center;        
     }
 </style>

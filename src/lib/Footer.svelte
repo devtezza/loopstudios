@@ -1,4 +1,9 @@
 <footer>
+  <div class="test">
+    <div class="a-test">Testing 15px</div>
+    <div class="b-test">Testing 16px</div>
+  </div>
+
     <div class="copyright">
         © 2021 Loopstudios. All rights reserved.
     </div>
@@ -10,6 +15,14 @@
 </footer>
 
 <style>
+    .test {
+      margin-top: 2rem;      
+    }
+
+    .a-test {
+      font-size: var(--font-size-custom);
+    }
+
     .copyright {
         text-align: center;
     }
