@@ -1,12 +1,12 @@
 <script>
   import './styles/main.css'
   import Footer from './lib/Footer.svelte';
-  import Header from './lib/Header.svelte';
+  import Home from './lib/Home.svelte';
 </script>
 
 <main>
   
-  <Header />
+  <Home />
   <Footer />
 </main>
 

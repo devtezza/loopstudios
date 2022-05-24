@@ -20,12 +20,14 @@ svg {
 --dark-gray: 0, 0%, 55%;
 --very-dark-gray: 0, 0%, 41%;
 
-/*Font Sizes*/
---default-font-size: 15px;
+
+--pixels-base: 16;
+--font-pixels-custom: 15;
+--font-size-custom: calc((var(--font-pixels-custom) / var(--pixels-base)) * 1rem);
 }
 
 a {
-    color: hsl(var(--default-black));
+    color: hsl(var(--default-white));
     text-decoration: none;
 }
 
