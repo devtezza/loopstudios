@@ -1,24 +1,15 @@
 <script>
   import './styles/main.css'
   import Footer from './lib/Footer.svelte';
+  import Header from './lib/Header.svelte';
 </script>
 
 <main>
   
-  About
-  Careers
-  Events
-  Products
-  Support
-
-  <h1>Immersive experiences that deliver</h1>
-
-  
-
-  The leader in interactive VR
+  <Header />
   <Footer />
 </main>
 
 <style>
-
+ 
 </style>
