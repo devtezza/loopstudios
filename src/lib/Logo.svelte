@@ -5,7 +5,8 @@
 
 
 <style>
-    .logo {        
+    .logo {
+        z-index: 3;        
         display: flex;
         /* border: 1px solid yellow; */
         width: calc(145 / var(--pixels-base) * 1rem);      

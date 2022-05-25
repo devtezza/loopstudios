@@ -9,7 +9,8 @@
 </div>
 
 <style>
-    .home {        
+    .home {
+        position: relative;        
         /* border: 1px solid lime; */
         --home-height-size: calc(650 / var(--pixels-base) * 1rem);
         width: 100%;

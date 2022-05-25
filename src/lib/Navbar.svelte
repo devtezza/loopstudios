@@ -1,8 +1,9 @@
 <script>
+    import { slide } from 'svelte/transition';
     export let isOpen;
 </script>
 {#if isOpen}
-<nav class="navbar">
+<nav class="navbar" transition:slide>
     <ul class="navbar-menu">
         <li><a href="/">About</a></li>
         <li><a href="/">Careers</a></li>
@@ -13,23 +14,29 @@
 </nav>
 {/if}
 <style>
-    .navbar {
-        /* overflow-y: hidden;
-        height: 25px;         */
-        border: 1px solid gold;
-        /* transform: translateY(-200px); */
+    .navbar {        
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        height: 100vh;
+        width: 100vw;         
+        /* border: 1px solid gold; */
+        background-color: hsl(var(--default-black));text-transform: uppercase;
+                 
+
     }
 
-   ul {
-        justify-content: space-between;
+   .navbar-menu {        
+        margin-top: calc(205 / var(--pixels-base) * 1rem);       
    }
 
-   /* ul.active {
-    
-   } */
-
    li {
+       font-family: 'Josefin Sans', sans-serif;
        margin-left: 1rem;
+       font-size: 150%;
+       font-weight: 300;
+       line-height: var(--font-lineheight-5);        
    }
 </style>
 

@@ -13,11 +13,12 @@
 <header class="header">
     <Logo />
     <Navbar {isOpen}/>
-    <MenuBtn on:menu={toggleMenu} />
+    <MenuBtn {isOpen} on:menu={toggleMenu}/>
 </header>
 <style>
     .header {              
         /* border: 1px solid blue; */
+        /* position: relative; */
         margin-top: 0.5rem;
         display: flex;
         justify-content: space-between;
