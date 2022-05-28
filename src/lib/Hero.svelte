@@ -17,10 +17,11 @@
         padding: var(--size-4);
     }
 
-    .h1 {
-       text-transform: uppercase;
-       font-family: 'Josefin Sans', sans-serif;
-       font-weight: 300;
-       font-size: var(--font-size-6);
+    @media screen and (min-width: 768px) {
+        .h1-frame {
+            width: 50%;
+        }
     }
+
+   
 </style>

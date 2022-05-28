@@ -1,9 +1,15 @@
-<footer>
-  <div class="test">
-    <div class="a-test">Testing 15px</div>
-    <div class="b-test">Testing 16px</div>
-  </div>
+<script>
+  import Logo from './Logo.svelte';
+  import FooterMenu from './FooterMenu.svelte';
+  import Social from './Social.svelte';
+  let logoLocation = 'footer'  ;
+</script>
+<footer class="footer">
+  <Logo {logoLocation}/>
 
+  <FooterMenu />
+
+  <Social />
     <div class="copyright">
         © 2021 Loopstudios. All rights reserved.
     </div>
@@ -15,17 +21,22 @@
 </footer>
 
 <style>
-    .test {
-      margin-top: 2rem;      
-    }
+    footer {
+      padding-top: var(--size-8);
+      background: hsl(var(--default-black));
+      color: hsl(var(--default-white));      
+    }   
 
-    .a-test {
-      font-size: var(--font-size-custom);
-    }
-
-    .copyright {
+    .copyright, .attribution {
         text-align: center;
+        color: hsl(var(--dark-gray));
     }
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+    .attribution {       
+      font-size: 11px; 
+      
+      margin-top: var(--size-3); 
+    }
+    .attribution a { 
+      color: var(--blue-9); 
+    }
 </style>

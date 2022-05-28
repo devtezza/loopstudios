@@ -17,8 +17,8 @@
         min-height: var(--home-height-size);        
         padding-inline: var(--size-5);
         padding-block: var(--size-6);
-        background-color: hsl(var(--default-black));
-        background-image: url(/images/mobile/image-hero.jpg);
+        background-color: hsl(var(--very-dark-gray));
+        background-image: var(--hero-mobile);
         background-size: cover;
         background-repeat: no-repeat;
     }

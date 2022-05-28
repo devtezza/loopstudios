@@ -3,6 +3,8 @@
     import MenuBtn from "./MenuBtn.svelte";
     import Navbar from "./Navbar.svelte";
 
+    let logoLocation = 'header';
+
     $: isOpen = false;
 
     const toggleMenu = () => {
@@ -11,7 +13,7 @@
     }
 </script>
 <header class="header">
-    <Logo />
+    <Logo {logoLocation} />
     <Navbar {isOpen}/>
     <MenuBtn {isOpen} on:menu={toggleMenu}/>
 </header>
