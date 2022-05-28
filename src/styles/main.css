@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400&display=swap');
 
 *,
 *::before,
@@ -17,20 +17,50 @@ svg {
 
 :root {
 /*Colors*/
---default-white: 0, 0%, 100%;
---default-black: 0, 0%, 0%;
---dark-gray: 0, 0%, 55%;
---very-dark-gray: 0, 0%, 41%;
+--default-white: 0 0% 100%;
+--default-black: 0 0% 0%;
+--dark-gray: 0 0% 55%;
+--very-dark-gray: 0 0% 41%;
 
 
 --pixels-base: 16;
 --font-pixels-custom: 15;
 --font-size-custom: calc((var(--font-pixels-custom) / var(--pixels-base)) * 1rem);
+
+/*Background Images*/
+--hero-mobile: url('/images/mobile/image-hero.jpg');
+--interactive-mobile: url('images/mobile/image-interactive.jpg');
 }
 
 body {
-  font-family: 'Alata', sans-serif;
-  font-weight: 400;
+  font-family: 'Alata', sans-serif;  
+  /* font-size: var(--font-size-3); */
+  /* font-weight: 400; */
+}
+
+h1, h2, h3 {
+  font-family: 'Josefin Sans', sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  
+}
+
+.h1 {      
+  font-size: var(--font-size-6);    
+}
+
+h2 {
+  margin-bottom: var(--size-3); 
+  font-size: var(--font-size-5);
+  color: hsl(var(--default-black));
+  font-weight: 300;
+  /* text-align: center; */
+  /* background-color: hsl(var(--default-black) / .2); */
+}
+
+h3 {
+  font-size: var(--font-size-4);
+  color: hsl(var(--default-white));
 }
 
 a {
