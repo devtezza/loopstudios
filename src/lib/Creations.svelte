@@ -10,7 +10,7 @@
         <div class="gallery-item" id="soccer-team">
             <h3>Soccer Team VR</h3>
         </div>
-        <div class="gallery-item" id="grid">
+        <div class="gallery-item" id="the-grid">
             <h3>The Grid</h3>
         </div>
         <div class="gallery-item" id="from-above">
@@ -52,6 +52,8 @@
         display: flex;
         align-items: center;
         z-index: 1;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
     .gallery-item h3 {
         width: 40%;
@@ -73,44 +75,34 @@
         z-index: -1;
     }
     #deep-earth {
-        background-image: url(/images/mobile/image-deep-earth.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-image: var(--deep-earth-mobile);
+        
     }
     #night-arcade {
-        background-image: url(/images/mobile/image-night-arcade.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-image: var(--night-arcade-mobile);
+        
     }
     #soccer-team {
-        background-image: url(/images/mobile/image-soccer-team.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-image: var(--soccer-team-mobile);
+       
     }
-    #grid {
-        background-image: url(/images/mobile/image-grid.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
+    #the-grid {
+        background-image: var(--the-grid-mobile);
+       
     }
     #from-above {
-        background-image: url(/images/mobile/image-from-above.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-image: var(--from-above-mobile);
+       
     }
     #pocket-borealis {
-        background-image: url(/images/mobile/image-pocket-borealis.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-image: var(--pocket-borealis-mobile);
+       
     }
     #curiosity {
-        background-image: url(/images/mobile/image-curiosity.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-image: var(--curiosity-mobile);      
     }
     #fisheye {
-        background-image: url(/images/mobile/image-fisheye.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
+        background-image: var(--fisheye-mobile);        
     }
     .cta {
         text-transform: uppercase;
@@ -127,7 +119,70 @@
 
     @media screen and (min-width: 480px) {
         .gallery-item {
-            min-height: var(--size-fluid-9);
+            height: var(--size-fluid-9);
         }
-   }
+    }
+
+    @media screen and (min-width: 768px) {
+        .gallery {
+            grid-template-columns: 1fr 1fr; 
+        }
+        .gallery-item {           
+            height: var(--size-fluid-8);
+        }       
+    }
+
+    @media screen and (min-width: 1024px) {
+        .creations {
+            display: grid;
+            grid-template-areas:
+             "creations-h2 2fr cta"
+             "gallery gallery gallery";
+        }
+        .creations h2 {
+            grid-area: creations-h2;
+        }
+        .gallery {
+            grid-template-columns: repeat(4, 1fr);
+            grid-area: gallery;
+        }
+        .gallery-item {            
+            height: var(--size-15);
+            background-position: center top;
+            background-size: cover;
+        }
+        #deep-earth {
+        background-image: var(--deep-earth-desktop);
+        
+        }
+        #night-arcade {
+            background-image: var(--night-arcade-desktop);
+            
+        }
+        #soccer-team {
+            background-image: var(--soccer-team-desktop);
+        
+        }
+        #the-grid {
+            background-image: var(--the-grid-desktop);
+        
+        }
+        #from-above {
+            background-image: var(--from-above-desktop);
+        
+        }
+        #pocket-borealis {
+            background-image: var(--pocket-borealis-desktop);
+        
+        }
+        #curiosity {
+            background-image: var(--curiosity-desktop);      
+        }
+        #fisheye {
+            background-image: var(--fisheye-desktop);        
+        }
+        .cta {
+            grid-area: cta;
+        }
+    }
 </style>

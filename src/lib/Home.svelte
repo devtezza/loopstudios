@@ -23,4 +23,11 @@
         background-repeat: no-repeat;
     }
 
+    @media screen and (min-width: 1024px) {
+        .home {
+            background-image: var(--hero-desktop);
+            background-position: center top;
+            /* background-size: cover; */
+        }
+    }
 </style>

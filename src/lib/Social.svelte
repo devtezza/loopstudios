@@ -11,5 +11,19 @@
         justify-content: space-between;
         padding-block: var(--size-5);
         padding-inline: 30%;
+        
+        
+    }
+
+    @media screen and (min-width: 500px) {
+        .social-icons {
+            padding-inline: 35%;
+        }
+    }
+
+    @media screen and (min-width: 768px) {
+        .social-icons {
+            padding-inline: 40%;
+        }
     }
 </style>

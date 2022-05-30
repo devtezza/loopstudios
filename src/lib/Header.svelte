@@ -3,19 +3,37 @@
     import MenuBtn from "./MenuBtn.svelte";
     import Navbar from "./Navbar.svelte";
 
-    let logoLocation = 'header';
+    const large = '(min-width: 1024px)';
+    let componentLocation = 'header';
 
     $: isOpen = false;
+    $: isLarge = matchesQuery(large);
 
     const toggleMenu = () => {
         console.log('toggled');
         isOpen = !isOpen;
     }
+
+    const matchesQuery = (query) => {
+        return window.matchMedia(query).matches;
+    }    
+
+    const handleResize = (e) => {
+        isLarge = matchesQuery(large);
+        if (isLarge && isOpen) {
+            toggleMenu();
+        }
+    }    
 </script>
+
+<svelte:window on:resize={handleResize}/>
+
 <header class="header">
-    <Logo {logoLocation} />
-    <Navbar {isOpen}/>
-    <MenuBtn {isOpen} on:menu={toggleMenu}/>
+    <Logo {componentLocation} />
+    <Navbar {isOpen} {isLarge}/>
+    {#if !isLarge}
+    <MenuBtn {isOpen} {isLarge} on:menu={toggleMenu}/>
+    {/if}
 </header>
 <style>
     .header {              

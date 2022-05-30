@@ -1,13 +1,15 @@
 <script>
   import Logo from './Logo.svelte';
-  import FooterMenu from './FooterMenu.svelte';
+  import MenuLinks from './MenuLinks.svelte';
   import Social from './Social.svelte';
-  let logoLocation = 'footer'  ;
+  let componentLocation = 'footer';
 </script>
 <footer class="footer">
-  <Logo {logoLocation}/>
+  <Logo {componentLocation}/>
 
-  <FooterMenu />
+  <div class="footer-menu-container">
+  <MenuLinks {componentLocation}/>
+  </div>
 
   <Social />
     <div class="copyright">
@@ -25,6 +27,11 @@
       padding-top: var(--size-8);
       background: hsl(var(--default-black));
       color: hsl(var(--default-white));      
+    }    
+  
+    .footer-menu-container {
+        margin-block: var(--size-7);
+        text-align: center;
     }   
 
     .copyright, .attribution {

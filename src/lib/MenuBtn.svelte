@@ -1,5 +1,6 @@
 <script>
     export let isOpen;
+    export let isLarge;
     import Hamburger from "./Hamburger.svelte";
     import Close from "./Close.svelte";
     import { createEventDispatcher } from 'svelte';    
@@ -16,7 +17,9 @@
         {#if isOpen}
         <Close {isOpen}/>
         {:else}
-        <Hamburger {isOpen}/>
+            {#if !isLarge}
+            <Hamburger {isOpen}/>
+            {/if}
         {/if}
         
     </span>

@@ -12,31 +12,22 @@
 <style>
     .intro {
         padding-top: calc(100 / var(--pixels-base) * 1rem);
-        padding-bottom: calc(90 / var(--pixels-base) * 1rem);
-        /* padding-top: calc(100 / var(--pixels-base) * 1rem);
-        padding-bottom: calc(35 / var(--pixels-base) * 1rem); */
-        /* border: 1px solid gold; */
-        /* display: grid;
-        grid-template-rows: 1fr 1fr; */
-        /* gap: var(--size-1); */
+        padding-bottom: calc(90 / var(--pixels-base) * 1rem);       
     }    
 
     .intro-image {
-        /* border: 1px solid lime; */
-        /* height: var(--size-fluid-8);         */
+        /* border: 1px solid lime; */        
         width: 100%;
         min-height: calc(225 / var(--pixels-base) * 1rem);      
-        background-image: url(/images/mobile/image-interactive.jpg);
+        background-image: var(--interactive-mobile);
         background-size: 100%;
-        background-position: top center;
-        background-repeat: no-repeat;
-        /* object-fit: cover; */
-    }
-   
+        background-position: center top;
+        background-repeat: no-repeat;       
+    }   
 
     .intro-text {       
        text-align: center;
-        margin-top: calc(40 / var(--pixels-base) * 1rem);
+       margin-top: calc(40 / var(--pixels-base) * 1rem);
        /* border: 1px solid pink;    */
     }
 
@@ -59,7 +50,48 @@
        .intro-text p {
            width: 70%;
        }
-   }
+    }
+
+    @media screen and (min-width: 768px) {
+        .intro-image {
+            background-image: var(--interactive-desktop);
+        }
+    }
+
+    @media screen and (min-width: 1024px) {
+       .intro {
+           display: grid;
+           grid-template-columns: repeat(5, 1fr);
+           grid-template-rows: repeat(5, 1fr);
+           /* border: 1px solid gold; */
+       }
+
+       .intro-image {
+           grid-column: 1 / 5;
+           grid-row: 1/6;
+           height: initial;
+           /* width: 100%; */
+           /* height: 100%; */
+           background-position: right top;
+       }
+
+       .intro-text {
+           grid-column: 4 / 6;
+           grid-row: 3 / 6;
+           background-color: hsl(var(--default-white));
+           margin: 0;
+           padding-top: var(--size-fluid-5);
+           padding-left: var(--size-fluid-5);
+           text-align: left;
+       }
+
+       .intro-text p {
+           margin: 0;
+           width: 100%;
+       }
+
+      
+    }
 
   
 </style>
