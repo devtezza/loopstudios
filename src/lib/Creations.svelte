@@ -61,6 +61,7 @@
         text-align: left;
         margin-top: 2rem;
         margin-left: 2rem;
+        transition: all .4s ease-in;
     }
     .gallery-item:nth-child(4) h3 {
         width: 30%;        
@@ -83,7 +84,7 @@
     .gallery-item::after {
         background: hsl(var(--default-white) / 0.75);
         transform: scaleY(0);
-        transition: transform .4s ease-out;
+        transition: transform .4s ease-in-out;
         transform-origin: bottom;
     }
 
