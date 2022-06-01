@@ -23,5 +23,14 @@
         }
     }
 
-   
+   @media screen and (min-width: 1440px) {
+       .hero {
+           margin-top: var(--size-11);
+       }
+
+       .h1-frame {
+            width: calc(675 / var(--pixels-base) * 1rem);            
+            padding: 2.5rem;
+       }
+   }
 </style>

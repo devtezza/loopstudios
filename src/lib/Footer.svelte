@@ -35,15 +35,54 @@
     }   
 
     .copyright, .attribution {
+      font-size: var(--font-size-custom);
         text-align: center;
         color: hsl(var(--dark-gray));
     }
-    .attribution {       
-      font-size: 11px; 
-      
+
+    .attribution {
+      grid-area: attribution;       
+      font-size: 11px;       
       margin-top: var(--size-3); 
     }
     .attribution a { 
       color: var(--blue-9); 
+    }
+
+    @media screen and (min-width: 1024px) {
+      footer {
+        display: grid;
+        /* grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr); */
+        grid-template-areas:
+          "logo . social"
+          "menu-container . copyright"
+          ". attribution ."
+        ;
+        gap: 25px;
+        justify-content: space-between;
+        align-items: center;
+        padding-inline: 25px;
+      }
+      .footer-menu-container {
+        grid-area: menu-container;
+        margin: 0;
+        width: var(--size-14);
+      }
+      .copyright {
+        grid-area: copyright;
+      }
+    }
+
+    @media screen and (min-width: 1440px) {
+      .footer {
+        /* border: 1px solid green; */
+        padding-top: 2.5rem;
+        padding-inline: var(--size-12);        
+      }
+
+      .attribution {
+        margin-top: initial;
+      }
     }
 </style>

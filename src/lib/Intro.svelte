@@ -93,5 +93,25 @@
       
     }
 
+    @media screen and (min-width: 1440px) {
+        .intro {
+            /* border: 1px solid goldenrod; */
+            grid-template-columns: repeat(6, 1fr);
+            grid-template-rows: repeat(6, 1fr);          
+        }
+
+        .intro-image {
+            grid-column: 1 / 5;
+            grid-row: 1/6;
+        }
+
+        .intro-text {
+            grid-column: 4/ 7;
+            grid-row: 3 / 6;
+            padding-top: var(--size-10);
+            padding-left: var(--size-11);
+        }
+    }
+
   
 </style>

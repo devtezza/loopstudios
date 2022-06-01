@@ -20,12 +20,13 @@
 
 <style>
     li {
+       position: relative;
        font-family: 'Josefin Sans', sans-serif;
        margin-left: 1rem;
        font-size: 150%;
        font-weight: 300;
        line-height: var(--font-lineheight-5);        
-    }
+    }    
 
     .footer-menu {
         display: flex;
@@ -39,13 +40,42 @@
         margin-top: calc(205 / var(--pixels-base) * 1rem);       
     }
 
-    .desktop-menu {
-        display: flex;
+    .desktop-menu {       
+        display: flex;       
     }
 
     @media screen and (min-width: 1024px) {
         li {
-            font-size: 100%;
+            font-size: var(--font-size-custom);
+            font-weight: 400;
+            margin-left: var(--size-4);
+        }
+
+        li::after {
+        content: '';
+        position: absolute;
+        bottom: -0.25rem;
+        left: 50%;
+        transform: translateX(-50%) scaleX(0);
+        height: 2px;
+        width: 50%;        
+        background: hsl(var(--default-white));
+        transition: transform .4s ease-in-out;
+        transform-origin: left;
+    }
+
+    li:hover::after {
+        transform: translateX(-50%) scaleX(1);
+    }
+
+        .footer-menu {
+            /* border: 1px solid gold;*/
+            flex-direction: row;
+            height: initial;            
+        }
+
+        .footer-menu li {
+            margin-left: 0;
         }
     }
    

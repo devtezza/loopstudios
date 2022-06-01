@@ -53,7 +53,9 @@ svg {
 }
 
 body {
-  font-family: 'Alata', sans-serif;  
+  font-family: 'Alata', sans-serif;
+  max-width: 1600px;
+  margin-inline: auto;  
   /* font-size: var(--font-size-3); */
   /* font-weight: 400; */
 }
@@ -65,7 +67,7 @@ h1, h2, h3 {
   
 }
 
-.h1 {      
+h1 {      
   font-size: var(--font-size-6);    
 }
 
@@ -90,4 +92,21 @@ a {
 
 ul {
     list-style: none;
+}
+
+@media screen and (min-width: 1440px) {
+    h1 {
+      font-size: 430%;
+    }
+
+    h2 {
+      font-size: var(--size-8);
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    body {
+      box-shadow: 0.05rem 0 0.5rem hsl(var(--very-dark-gray) / .1), -0.05rem 0 0.5rem hsl(var(--very-dark-gray) / .1);
+
+    }
 }

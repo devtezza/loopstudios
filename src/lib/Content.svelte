@@ -11,5 +11,11 @@
         /* padding-block: var(--size-10); */
         padding-inline: var(--size-5);
     }
+
+    @media screen and (min-width: 1440px) {
+        main {
+            padding-inline: var(--size-12);
+        }
+    }
     
 </style>

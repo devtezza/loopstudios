@@ -30,4 +30,11 @@
             /* background-size: cover; */
         }
     }
+
+    @media screen and (min-width: 1440px) {
+        .home {
+            padding-block: var(--size-9);
+            padding-inline: var(--size-12);
+        }
+    }
 </style>
