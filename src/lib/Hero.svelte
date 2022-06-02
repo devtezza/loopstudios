@@ -1,9 +1,8 @@
-<section class="hero">
+<div class="hero">
     <div class="h1-frame">
         <h1 class="h1">Immersive Experiences That Deliver</h1>
-    </div>
-    
-</section>
+    </div>    
+</div>
 
 <style>
     .hero {
