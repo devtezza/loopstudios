@@ -30,23 +30,19 @@
 </section>
 <style>
     .creations {
-        text-align: center;
-        /* border: 1px solid red; */
-        /* padding-bottom: var(--size-10); */
+        text-align: center;        
         padding-bottom: calc(100 / var(--pixels-base) * 1rem);
     }
+    
     .gallery {
         padding-top: var(--size-5);
         padding-bottom: var(--size-7);
         display: grid;
-        gap: calc(23 / var(--pixels-base) * 1rem);
-        /* align-items: center; */
-        /* border: 1px solid green; */
+        gap: calc(23 / var(--pixels-base) * 1rem);       
     }
-    .gallery-item {
-        /* border: 1px solid red; */
-        position: relative;
-        /* height: var(--size-11); */
+
+    .gallery-item {       
+        position: relative;        
         height: calc(122 / var(--pixels-base) * 1rem);
         width: 100%;
         display: flex;
@@ -56,6 +52,7 @@
         background-size: cover;
         cursor: pointer;
     }
+
     .gallery-item h3 {
         width: 40%;
         text-align: left;
@@ -63,17 +60,16 @@
         margin-left: 2rem;
         transition: all .4s ease-in;
     }
+
     .gallery-item:nth-child(4) h3 {
         width: 30%;        
     }
+
     .gallery-item::before, .gallery-item::after {
         content: '';
         position: absolute;
         width: 100%;
-        height: 100%;
-        
-        /* background: transparent; */
-        /* opacity: 0.1; */
+        height: 100%;    
         z-index: -1;
     }
 
@@ -94,42 +90,46 @@
 
     .gallery-item:hover::after {
         transform: scaleY(1);
-    }
-
-    /* .gallery-item:hover::before {
-        background: hsl(var(--default-white) / 0.5);
-    } */
+    }   
 
     #deep-earth {
         background-image: var(--deep-earth-mobile);
         
     }
+
     #night-arcade {
         background-image: var(--night-arcade-mobile);
         
     }
+
     #soccer-team {
         background-image: var(--soccer-team-mobile);
        
     }
+
     #the-grid {
         background-image: var(--the-grid-mobile);
        
     }
+
     #from-above {
         background-image: var(--from-above-mobile);
        
     }
+
     #pocket-borealis {
         background-image: var(--pocket-borealis-mobile);
        
     }
+
     #curiosity {
         background-image: var(--curiosity-mobile);      
     }
+
     #fisheye {
         background-image: var(--fisheye-mobile);        
     }
+
     .cta {
         position: relative;
         text-transform: uppercase;
@@ -145,7 +145,6 @@
         cursor: pointer;
         transition: all .3s ease-in;
         z-index: 1;
-        /* margin-inline: auto; */
     }
 
     .cta::after {
@@ -155,8 +154,7 @@
         height: 100%;
         top: 0;
         left: 0;
-        background: hsl(var(--default-black));
-        /* background: green; */
+        background: hsl(var(--default-black));        
         border: 2px solid hsl(var(--default-black));
         border: none;
         transform: scaleX(0);
@@ -167,14 +165,11 @@
 
     .cta:hover {        
         color: hsl(var(--default-white));
-        border: 2px solid hsl(var(--default-black));
-        /* border: none; */
-        /* outline: none; */
+        border: 2px solid hsl(var(--default-black));        
     }
 
     .cta:hover::after {
         transform: scaleX(1);
-
     }
 
     @media screen and (min-width: 480px) {
@@ -187,6 +182,7 @@
         .gallery {
             grid-template-columns: 1fr 1fr; 
         }
+
         .gallery-item {           
             height: var(--size-fluid-8);
         }       
@@ -199,19 +195,23 @@
              "creations-h2 2fr cta"
              "gallery gallery gallery";
         }
+
         .creations h2 {
             grid-area: creations-h2;
         }
+
         .gallery {
             grid-template-columns: repeat(4, 1fr);
             grid-area: gallery;
         }
+
         .gallery-item {
             align-items: flex-end;            
             height: 28rem;
             background-position: left top;
             background-size: cover;
         }
+
         .gallery-item h3 {
             width: 50%;
             font-size: 200%;
@@ -227,42 +227,43 @@
         }
 
         #deep-earth {
-        background-image: var(--deep-earth-desktop);
-        
+        background-image: var(--deep-earth-desktop);        
         }
+
         #night-arcade {
             background-image: var(--night-arcade-desktop);
-            
         }
+
         #soccer-team {
             background-image: var(--soccer-team-desktop);
-        
         }
+
         #the-grid {
-            background-image: var(--the-grid-desktop);
-        
+            background-image: var(--the-grid-desktop);        
         }
+
         #from-above {
             background-image: var(--from-above-desktop);
-        
         }
+
         #pocket-borealis {
             background-image: var(--pocket-borealis-desktop);
-        
         }
+
         #curiosity {
             background-image: var(--curiosity-desktop);      
         }
+
         #fisheye {
             background-image: var(--fisheye-desktop);        
         }
+
         .cta {
             grid-area: cta;
         }        
     }
 
-    @media screen and (min-width: 1440px) {       
-
+    @media screen and (min-width: 1440px) {
         .gallery {
            padding-top: var(--size-9);
            padding-bottom: var(--size-10); 
@@ -271,7 +272,6 @@
 
         .cta {
            height: 70%;
-        }
-        
+        }        
     }
 </style>

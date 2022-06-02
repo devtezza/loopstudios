@@ -9,8 +9,7 @@
     $: isOpen = false;
     $: isLarge = matchesQuery(large);
 
-    const toggleMenu = () => {
-        console.log('toggled');
+    const toggleMenu = () => {        
         isOpen = !isOpen;
     }
 
@@ -36,9 +35,7 @@
     {/if}
 </header>
 <style>
-    .header {              
-        /* border: 1px solid blue; */
-        /* position: relative; */
+    .header {                     
         margin-top: 0.5rem;
         display: flex;
         justify-content: space-between;

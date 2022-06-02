@@ -7,8 +7,7 @@
     <Creations />
 </main>
 <style>
-    main {
-        /* padding-block: var(--size-10); */
+    main {        
         padding-inline: var(--size-5);
     }
 
@@ -16,6 +15,5 @@
         main {
             padding-inline: var(--size-12);
         }
-    }
-    
+    }    
 </style>

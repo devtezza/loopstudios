@@ -10,8 +10,7 @@
 
 <style>
     .home {
-        position: relative;        
-        /* border: 1px solid lime; */
+        position: relative;                
         --home-height-size: calc(650 / var(--pixels-base) * 1rem);
         width: 100%;
         min-height: var(--home-height-size);        
@@ -26,8 +25,7 @@
     @media screen and (min-width: 1024px) {
         .home {
             background-image: var(--hero-desktop);
-            background-position: center top;
-            /* background-size: cover; */
+            background-position: center top;            
         }
     }
 

@@ -15,17 +15,4 @@
         <NavDesktopMenu />
     </div>
     {/if}
-{/if}
-<style>
-  /* div {
-      border: 1px solid red;
-  }
-    */
-
- 
-</style>
-
-
-  
-  
-  
+{/if}  

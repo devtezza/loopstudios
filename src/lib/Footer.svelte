@@ -4,18 +4,16 @@
   import Social from './Social.svelte';
   let componentLocation = 'footer';
 </script>
+
 <footer class="footer">
   <Logo {componentLocation}/>
-
   <div class="footer-menu-container">
   <MenuLinks {componentLocation}/>
   </div>
-
   <Social />
     <div class="copyright">
         © 2021 Loopstudios. All rights reserved.
-    </div>
-    
+    </div>    
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://www.devtezza.com/">Fernando Tezza</a>.
@@ -45,30 +43,30 @@
       font-size: 11px;       
       margin-top: var(--size-3); 
     }
+
     .attribution a { 
       color: var(--blue-9); 
     }
 
     @media screen and (min-width: 1024px) {
       footer {
-        display: grid;
-        /* grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(3, 1fr); */
+        display: grid;       
         grid-template-areas:
           "logo . social"
           "menu-container . copyright"
-          ". attribution ."
-        ;
+          ". attribution .";
         gap: 25px;
         justify-content: space-between;
         align-items: center;
         padding-inline: 25px;
       }
+
       .footer-menu-container {
         grid-area: menu-container;
         margin: 0;
         width: var(--size-14);
       }
+
       .copyright {
         grid-area: copyright;
       }
@@ -80,6 +78,7 @@
         padding-top: 2.5rem;
         padding-inline: var(--size-12);        
       }
+      
       .attribution {
         margin-top: initial;        
       }

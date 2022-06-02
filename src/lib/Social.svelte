@@ -16,8 +16,7 @@
     }
 
     .social-icons a {
-        position: relative;
-        /* border: 1px solid red;         */
+        position: relative;       
     }
 
     .social-icons a::after {
@@ -53,8 +52,7 @@
         .social-icons {           
             grid-area: social;           
             padding: 0;
-            padding-left: 100px;
-            /* border: 1px solid red; */
+            padding-left: 100px;            
         }
     }
 </style>

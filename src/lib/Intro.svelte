@@ -8,15 +8,13 @@
             to their brand.</p>
     </div>
 </section>
-
 <style>
     .intro {
         padding-top: calc(100 / var(--pixels-base) * 1rem);
         padding-bottom: calc(90 / var(--pixels-base) * 1rem);       
     }    
 
-    .intro-image {
-        /* border: 1px solid lime; */        
+    .intro-image {        
         width: 100%;
         min-height: calc(225 / var(--pixels-base) * 1rem);      
         background-image: var(--interactive-mobile);
@@ -27,19 +25,16 @@
 
     .intro-text {       
        text-align: center;
-       margin-top: calc(40 / var(--pixels-base) * 1rem);
-       /* border: 1px solid pink;    */
+       margin-top: calc(40 / var(--pixels-base) * 1rem);       
     }
 
    .intro-text p {
-        width: 90%;
-        /* margin-top: var(--size-3); */
+        width: 90%;        
         margin-inline: auto;
         color: hsl(var(--dark-gray));
         font-family: 'Alata', sans-serif;
         font-size: var(--font-size-custom);
-        line-height: var(--font-lineheight-4);
-        /* border: 1px solid green; */
+        line-height: var(--font-lineheight-4);        
    }
 
    @media screen and (min-width: 480px) {
@@ -62,16 +57,13 @@
        .intro {
            display: grid;
            grid-template-columns: repeat(5, 1fr);
-           grid-template-rows: repeat(5, 1fr);
-           /* border: 1px solid gold; */
+           grid-template-rows: repeat(5, 1fr);           
        }
 
        .intro-image {
            grid-column: 1 / 5;
            grid-row: 1/6;
-           height: initial;
-           /* width: 100%; */
-           /* height: 100%; */
+           height: initial;          
            background-position: right top;
        }
 
@@ -88,9 +80,7 @@
        .intro-text p {
            margin: 0;
            width: 100%;
-       }
-
-      
+       }      
     }
 
     @media screen and (min-width: 1440px) {
@@ -112,6 +102,4 @@
             padding-left: var(--size-11);
         }
     }
-
-  
 </style>

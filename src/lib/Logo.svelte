@@ -13,10 +13,10 @@
 <style>
     .logo {
         z-index: 3;        
-        display: flex;
-        /* border: 1px solid yellow; */
+        display: flex;        
         width: calc(145 / var(--pixels-base) * 1rem);      
     }
+    
     .logo.footer {
       margin-inline: auto;
     }

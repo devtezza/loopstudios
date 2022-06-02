@@ -5,13 +5,9 @@
   import Home from './lib/Home.svelte';
   import Content from './lib/Content.svelte';
 </script>
-
-<main>  
+  
   <Home />
-  <Content />
+  <main>
+    <Content />
+  </main>
   <Footer />
-</main>
-
-<style>
- 
-</style>

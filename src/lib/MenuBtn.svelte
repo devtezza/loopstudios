@@ -9,9 +9,9 @@
 
     const eventMenu = () => {
         dispatch('menu')
-    };
-    
+    };    
 </script>
+
 <button class="menu-btn" class:transition={isOpen} class:return={!isOpen} on:click={eventMenu}>
     <span>
         {#if isOpen}
@@ -24,6 +24,7 @@
         
     </span>
 </button>
+
 <style>
     .menu-btn {
         cursor: pointer;
@@ -31,9 +32,7 @@
         background: none;
         border: none;        
     }
-
-   
-
+    
     .menu-btn.transition {
         animation: var(--animation-scale-up) reverse,  var(--animation-fade-out) reverse;
         animation-duration: .5s;

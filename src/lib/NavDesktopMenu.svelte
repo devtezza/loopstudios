@@ -3,6 +3,7 @@
     import MenuLinks from "./MenuLinks.svelte";
     let componentLocation = 'desktop';
 </script>
+
 <nav class="navbar" transition:slide>
     <MenuLinks {componentLocation} />    
 </nav>

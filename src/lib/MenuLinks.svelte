@@ -7,7 +7,6 @@
     componentLocation === 'footer' ? isFooter = true : isFooter = false;
     componentLocation === 'mobile' ? isMobile = true : isMobile = false;
     componentLocation === 'desktop' ? isDesktop = true : isDesktop = false;
-
 </script>
 
 <ul class="menu-links" class:footer-menu={isFooter} class:mobile-menu={isMobile} class:desktop-menu={isDesktop}>
@@ -68,8 +67,7 @@
         transform: translateX(-50%) scaleX(1);
     }
 
-        .footer-menu {
-            /* border: 1px solid gold;*/
+        .footer-menu {            
             flex-direction: row;
             height: initial;            
         }
@@ -77,6 +75,5 @@
         .footer-menu li {
             margin-left: 0;
         }
-    }
-   
+    }   
 </style>
