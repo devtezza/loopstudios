@@ -6,8 +6,6 @@
   import Content from './lib/Content.svelte';
 </script>
   
-  <Home />
-  <main>
-    <Content />
-  </main>
+  <Home />  
+  <Content />  
   <Footer />
