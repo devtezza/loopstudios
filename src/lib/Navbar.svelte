@@ -5,6 +5,7 @@
     export let isOpen;
     export let isLarge;    
 </script>
+
 {#if isOpen && !isLarge}
 <div class="mobile-nav-container" >
     <NavMobileMenu />
@@ -15,4 +16,4 @@
         <NavDesktopMenu />
     </div>
     {/if}
-{/if}  
+{/if}

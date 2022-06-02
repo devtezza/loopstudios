@@ -16,7 +16,7 @@
         left: 0;
         z-index: 2;
         height: 100vh;
-        width: 100vw;                 
+        width: 100%;                 
         background-color: hsl(var(--default-black));text-transform: uppercase; 
     }
 </style>

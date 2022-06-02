@@ -11,6 +11,7 @@
 
     const toggleMenu = () => {        
         isOpen = !isOpen;
+        document.body.classList[isOpen ? 'add' : 'remove']('no-scroll');
     }
 
     const matchesQuery = (query) => {

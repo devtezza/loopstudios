@@ -63,6 +63,10 @@ body {
   margin-inline: auto;   
 }
 
+body.no-scroll {
+  overflow-y: hidden;
+}
+
 h1, h2, h3 {
   font-family: 'Josefin Sans', sans-serif;
   text-transform: uppercase;
@@ -92,7 +96,7 @@ a {
 }
 
 ul {
-    list-style: none;
+    list-style: none;    
 }
 
 main {

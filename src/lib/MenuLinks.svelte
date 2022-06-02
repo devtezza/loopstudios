@@ -17,40 +17,18 @@
     <li><a href="/">Support</a></li>       
 </ul>
 
-<style>
+<style>    
     li {
        position: relative;
        font-family: 'Josefin Sans', sans-serif;
        margin-left: 1rem;
        font-size: 150%;
        font-weight: 300;
-       line-height: var(--font-lineheight-5);        
-    }    
-
-    .footer-menu {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        height: calc(180 / var(--pixels-base) * 1rem);
-        font-size: var(--font-size-custom);
-    }
-
-    .mobile-menu {        
-        margin-top: calc(205 / var(--pixels-base) * 1rem);       
-    }
-
-    .desktop-menu {       
-        display: flex;       
-    }
-
-    @media screen and (min-width: 1024px) {
-        li {
-            font-size: var(--font-size-custom);
-            font-weight: 400;
-            margin-left: var(--size-4);
-        }
-
-        li::after {
+       line-height: var(--font-lineheight-5);
+               
+    }  
+    
+    li::after {
         content: '';
         position: absolute;
         bottom: -0.25rem;
@@ -67,13 +45,50 @@
         transform: translateX(-50%) scaleX(1);
     }
 
+    .footer-menu {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;        
+        height: calc(180 / var(--pixels-base) * 1rem);
+        width: fit-content;
+        margin-inline: auto;
+    }
+
+    .footer-menu li {
+        font-size: var(--font-size-custom);
+        font-weight: 400;
+        margin-left: 0;        
+    }  
+
+    .mobile-menu {        
+        margin-top: calc(205 / var(--pixels-base) * 1rem);
+        width: fit-content;       
+    }
+
+    .mobile-menu li {       
+        width: fit-content;
+    }
+
+    .mobile-menu li::after {      
+        bottom: 0.5rem;
+    } 
+
+    .desktop-menu {       
+        display: flex;       
+    }
+
+    @media screen and (min-width: 1024px) {
+        li {
+            font-size: var(--font-size-custom);
+            font-weight: 400;
+            margin-left: var(--size-4);
+        }   
+
         .footer-menu {            
             flex-direction: row;
-            height: initial;            
-        }
-
-        .footer-menu li {
-            margin-left: 0;
+            height: initial;
+            width: 100%;            
         }
     }   
 </style>
