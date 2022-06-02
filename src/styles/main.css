@@ -54,6 +54,7 @@ svg {
 
 body {
   font-family: 'Alata', sans-serif;
+  min-width: 360px;
   max-width: 1600px;
   margin-inline: auto;  
   /* font-size: var(--font-size-3); */

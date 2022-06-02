@@ -80,9 +80,8 @@
         padding-top: 2.5rem;
         padding-inline: var(--size-12);        
       }
-
       .attribution {
-        margin-top: initial;
+        margin-top: initial;        
       }
     }
 </style>

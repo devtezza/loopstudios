@@ -261,8 +261,11 @@
         }        
     }
 
-    @media screen and (min-width: 1440px) {
+    @media screen and (min-width: 1440px) {       
+
         .gallery {
+           padding-top: var(--size-9);
+           padding-bottom: var(--size-10); 
            gap: var(--size-7);
         }
 

@@ -95,7 +95,7 @@
 
     @media screen and (min-width: 1440px) {
         .intro {
-            /* border: 1px solid goldenrod; */
+            padding-top: calc(150 / var(--pixels-base) * 1rem);            
             grid-template-columns: repeat(6, 1fr);
             grid-template-rows: repeat(6, 1fr);          
         }
